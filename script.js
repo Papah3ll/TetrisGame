@@ -104,8 +104,6 @@ document.getElementById("startButton").addEventListener("click", function(){
   
 })
 
-// Update the board after drawing the tetromino
-
 function checkCollision(tetromino, row, col) {
   console.log(tetromino);
   for (let i = 0; i < tetromino.length; i++) {
@@ -142,7 +140,6 @@ function moveTetrominoLeft() {
         drawBoard();
 
       }
-       // Update the board after moving the tetromino
     }
     else if(!(checkCollision(currentTetromino, currentRow, currentCol - 1))){
       if(currentCol>0){
